@@ -19,7 +19,8 @@ subprojects {
     version = '1.50-b01'
 
 test {
-  systemProperty 'bc.test.data.home', file('core/src/test/data')
+  systemProperty 'bc.test.data.home', file('core/src/test/data').absolutePath
+  println System.properties['bc.test.data.home']
 }
 }
 
