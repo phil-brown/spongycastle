@@ -19,7 +19,7 @@ subprojects {
     version = '1.50-b01'
 
 test {
-  systemProperty 'bc.test.data.home', '/home/parallels/development/spongycastle/core/src/test/data'
+  systemProperty 'bc.test.data.home', file('core/src/test/data')
 }
 }
 
